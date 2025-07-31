@@ -50,7 +50,12 @@ h1{
     border: none;
 }
 .msg-container{
-    height: 18vmin;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 #msg{
     color:#69995D;
@@ -60,9 +65,6 @@ h1{
 #new-btn{
     height: 5vmin;
     width: 15vmin;
-    text-align: center;
-    position: relative;
-    left: 47vw;
     background-color: #CBAC88;
     border-radius: 1rem;
     padding: 2vmin;
@@ -72,5 +74,21 @@ h1{
     border: none;
 }
 .hide{
+    display: none;
+}
+.msg-draw.hide{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.msg-draw.hide p{
+    color:#69995D;
+    font-size: 8vmin;
+    
+}
+.msg-draw.hide{
     display: none;
 }
